@@ -1,0 +1,1710 @@
+@font-face {
+    font-family: Roboto-mono;
+    src: url(./assets/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: Reckless;
+    src: url(./assets/RecklessCondensedS-TRIAL-Book.woff);
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url(./assets/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+
+@font-face {
+    font-family: Midnight;
+    src: url(./assets/midnight-sans-rd-12-semibold-trial.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #fbf9eb;
+    overflow-x: hidden;
+}
+
+header{
+    height: 4vh;
+    width: 100%;
+    background-color: #2a2857;
+    color: white;
+    text-align: center;
+    font-family: Roboto-mono;
+    padding: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 550;
+    letter-spacing: 0.05rem;
+}
+
+#section-1{
+    height: 91vh;
+    background-image: url(./assets/Desktop-bg.webp);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid black;
+    padding: 1rem 1.5rem;
+}
+
+nav{
+    height: 9vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1.2rem;
+    border-radius: 0.6rem;
+    border: 1px solid black;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all ease 0.2s;
+}
+
+.nav-left{
+    width: 30%;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-left span{
+    font-family: Reckless;
+    font-size: 1.5rem;
+}
+
+.ri-menu-line{
+    display: none;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.ri-arrow-down-s-line,
+.ri-arrow-down-s-line{
+    background-color: #c0dbff;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+.ri-star-smile-fill{
+    color: #ffb500;
+}
+
+.nav-right{
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-right span{
+    font-family: Roboto-mono;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-right span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.nav-right span:hover::after{
+    width: 100%;
+}
+
+.nav-right i{
+    font-size: 1.8rem;
+}
+
+
+#section-1 .text-container{
+    width: 100%;
+    height: 85vh;
+}
+
+#section-1 .section-1-text{
+    width: 63vh;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    color: white;
+    gap: 1rem;
+}
+
+#section-1 .section-1-text h1{
+    font-family: Reckless;
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+#section-1 .section-1-text p{
+    font-family: Figtree;
+    font-size: 1.07rem;
+}
+
+#section-1 .section-1-text button{
+    padding: 1.1rem 3.7rem;
+    border: none;
+    background-color: #2a2857;
+    color: white;
+    border-radius: 1.8rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    transition: all ease 0.2s;
+}
+
+#section-1 .section-1-text button:hover{
+    background-color: white;
+    color: black;}
+
+
+#section-2{
+    min-height: 125vh;
+    padding: 0rem 1rem;
+    border-bottom: 1px solid black;
+}
+
+#section-2 .section-2-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    height: 10%;
+}
+
+#section-2 .section-2-text h1{
+    width: 60vmax;
+    font-family: Reckless;
+    font-weight: 100;
+    font-size: clamp(1.6rem, 4vw, 3.5rem);
+    white-space: none;
+}
+
+.best-seller{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    padding: 1rem;
+}
+
+#section-2 .best-seller button{
+    background-color: #daaeea;
+    font-size: clamp(2rem, 3.5vw, 6rem);
+    font-family: Midnight;
+    padding: 0rem 0.2rem;
+    border-radius: 0.4rem;
+    rotate: -3deg;
+    font-weight: 700;
+}
+
+#section-2 .card-container{
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+
+.card-container #card1{
+    background-color: #c1ee91;
+    /* width: 100%; */
+}
+
+.card-container #card2{
+    background-color: #ffd884;
+    width: 100%;
+}
+
+.card-container #card3{
+    background-color: #b0e8c1;
+    width: 100%;
+}
+
+.card-container #card4{
+    background-color: #c1e4f8;
+    width: 100%;
+}
+
+.card-container #card5{
+    background-color: #c0e571;
+    width: 100%;
+}
+
+.card-container #card6{
+    background-color: #ffd1b8;
+    width: 100%;
+}
+
+.card-container #card7{
+    background-color: #cce3ff;
+    width: 100%;
+}
+
+.card-container #card8{
+    background-color: #aee0f9;
+    width: 100%;
+}
+
+.card{
+    width: clamp(200px, 5vw,320px);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.card-top{
+    height: clamp(250px, 5vw,350px);
+    width: 100%;
+    background-color: #c1ee91;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.card-top img{
+    width: 85%;
+    height: 77%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transition: all ease 0.3s;
+}
+
+.card-top-text button{
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+    background-color: white;
+    font-family: Midnight;
+    font-size: 0.8rem;
+    
+}
+
+.card-top-text span{
+    font-size: 0.9rem;
+    font-family: Reckless;
+}
+
+.card .card-top-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-btm-text{
+    background-color: white;
+    padding: 0.25rem 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-family: Roboto-mono;
+    font-size: 1.2rem;
+}
+
+.card-top:hover img{
+    scale: 1.1;
+}
+.card-btm-text span{
+    font-size: 0.6rem;
+}
+
+.card-btm{
+    font-family: Reckless;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: start;
+
+}
+
+.card-btm h1{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 2%;
+}
+
+.card-btm h3{
+    font-family: Figtree;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.card-btm p{
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.sec-2-btn{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    
+}
+
+.sec-2-btn .btm-btn{
+    padding: 1rem 2.5rem;
+    border: none;
+    background-color: #2a2857;
+    color: white;
+    border-radius: 1.8rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    transition: all ease 0.2s;
+}
+
+.sec-2-btn .btm-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+#section-3{
+    min-height: 100vh;
+    width: 100%;
+    padding: 9rem;
+}
+
+.section-3-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+.best-seller{
+    display: flex;
+    justify-content: start;
+    padding: 1rem;
+}
+
+#section-3 .best-seller button{
+    font-size: clamp(2rem, 3.5vw, 6rem);
+    font-family: Midnight;
+    padding: 0rem 0.2rem;
+    border-radius: 0.4rem;
+    rotate: -3deg;
+    font-weight: 700;
+}
+
+#section-3 h1{
+    width: 45vmax;
+    font-family: Reckless;
+    font-weight: 100;
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    white-space: none;
+}
+
+#section-3 input{
+    padding: 0rem 1.7rem;
+    margin-top: 1%;
+    height: 10vmin;
+    width: 40vmax;
+    font-size: 2rem;
+    font-weight: 100;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    background-color: #fbf9eb;
+}
+
+#section-3 .section-3-btm{
+    width: 100%;
+}
+#section-3 .section-3-btm p{
+    font-family: Figtree;
+}
+
+#section-3 .section-3-btm .blues{
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+}
+
+#section-3 .section-3-btm .blues span{
+    font-family: Reckless;
+    font-size: 2rem;
+    background-color: #daeaff;
+    padding: 0.6rem 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    white-space: nowrap;
+    transition: all ease 0.2s;
+}
+
+#section-3 .section-3-btm .blues span:hover{
+    background-color: #04a0ee;
+}
+
+
+#section-4{
+    min-height: 250vh;
+    width: 100%;
+    background-image: url(./assets/forest-bg.webp);
+    background-size: cover;
+    padding: 1rem;
+}
+
+#section-4 .best-seller button{
+    background-color: #a2c9fc;
+    font-size: clamp(2rem, 3.5vw, 6rem);
+    font-family: Midnight;
+    padding: 0rem 0.2rem;
+    border-radius: 0.4rem;
+    rotate: -3deg;
+    font-weight: 700;
+}
+
+#section-4 .section-4-content .svgs img{
+    height: clamp(4rem, 8vw, 10rem);
+}
+
+#section-4 .section-4-content{
+    min-height: 250vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#section-4 .section-4-content h1{
+    font-family: Midnight;
+    color: white;
+    font-size: clamp(4rem, 12vw, 10rem);
+    width: 60vmax;
+    text-align: center;
+}
+
+#section-4 .section-4-content span{
+    width: 90vw;
+    font-family: Reckless;
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+#section-4 .section-4-content .svgs{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#section-4 .section-4-content .svgs h3{
+    font-weight: 100;
+    font-size: clamp(1rem, 1vw, 0.2rem);
+    text-align: center;
+}
+
+#section-4 .section-4-content>button{
+    padding: 1rem 3.5rem;
+    font-size: 1.1rem;
+    border-radius: 1.7rem;
+    border: 1px solid black;
+    transition: all ease 0.2s;
+}
+
+#section-4 .section-4-content>button:hover{
+    color: white;
+    background-color: #2a2857;
+    
+}
+
+#section-5{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.section-5-top{
+    padding: 3rem 9rem;
+}
+
+.section-5-top h1{
+    font-family: Reckless;
+    width: 45vmax;
+    font-family: Reckless;
+    font-weight: 100;
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    white-space: none;
+}
+
+#section-5 .section-5-top .reviews button{
+    background-color: #73bc25;
+    font-size: clamp(2rem, 3.5vw, 6rem);
+    font-family: Midnight;
+    padding: 0rem 0.2rem;
+    border-radius: 0.4rem;
+    rotate: -3deg;
+    font-weight: 700;
+}
+
+#section-5 .new-cards-container{
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    
+}
+
+#section-5 .new-cards-container::-webkit-scrollbar{
+    display: none;
+}
+
+.new-cards{
+    background-color: crimson;
+    height: 59vh;
+    width: clamp(300px,6vw,320px);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 4rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
+.new-cards .card-center h1{
+    font-weight: 100;
+    font-family: Reckless;
+    text-align: center;
+}
+
+.new-cards .card-center p{
+    color: #755747;
+    text-align: center;
+}
+
+.new-cards .card-bottom{
+    padding: 0rem 0.3rem;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+    border-radius: 1rem;
+}
+
+.new-cards .card-bottom img{
+    height: 4.4rem;
+    border-right: 1px solid black;
+}
+
+.new-cards .card-bottom p{
+    font-size: 0.8rem;
+    font-family: Roboto-mono;
+    color: white;
+}
+.new-cards .card-bottom button{
+    padding: 0.5rem 0.6rem;
+    font-size: 0.9rem;
+    border-radius: 1.4rem;
+    border: 1px solid black;
+}
+
+#section-5 .new-cards-container #card1{
+    background-color: #f5af8a;
+}
+#section-5 .new-cards-container #card1 .card-bottom{
+    background-color: #ea6d44;
+}
+
+#section-5 .new-cards-container #card2{
+    background-color: #abdf74;
+}
+
+#section-5 .new-cards-container #card2 h1,
+#section-5 .new-cards-container #card3 h1{
+    font-size: 1.3rem;
+}
+#section-5 .new-cards-container #card2 .card-bottom{
+    background-color: #73bc25;
+}
+#section-5 .new-cards-container #card3{
+    background-color: #ffd265;
+}
+#section-5 .new-cards-container #card3 .card-bottom{
+    background-color: #ffb500;
+}
+#section-5 .new-cards-container #card4{
+    background-color: #ade674;
+}
+#section-5 .new-cards-container #card4 .card-bottom{
+    background-color: #8bc045;
+}
+#section-5 .new-cards-container #card5{
+    background-color: #d9c2e1;
+}
+#section-5 .new-cards-container #card5 .card-bottom{
+    background-color: #c790db;
+}
+
+#section-6{
+    height: 100%;
+    width: 100%;
+    background-color: royalblue;
+    display: flex;
+    align-items: center;
+}
+
+#section-6 .sec-6-left{
+    width: 50%;
+    height: 100%;
+    background-image: url(./assets/sec-6-left.webp);
+    background-size: cover;
+}
+
+#section-6 .sec-6-right{
+    width: 50%;
+    height: 100%;
+    background-color: #2a2857;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+#section-6 .sec-6-right .sec-6-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#section-6 .sec-6-right .sec-6-txt h1{
+    width: 90%;
+    font-family: Reckless;
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+#section-6 .sec-6-right .sec-6-txt p{
+    width: 70%;
+    font-family: Figtree;
+    font-size: 1.3rem;
+}
+
+#section-6 .sec-6-right .sec-6-txt button{
+    padding: 1rem 3.5rem;
+    font-family: Figtree;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    transition: all ease 0.2s;
+}
+
+#section-6 .sec-6-right .sec-6-txt button:hover{
+    background-color: #2a2857;
+    color: white;
+}
+
+#section-7{
+    min-height: 120vh;
+    width: 100%;
+    background-color: #9f6429;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#section-7 .top-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-7 .best-seller button{
+    background-color: #ffcb96;
+    font-size: clamp(2rem, 3.5vw, 5rem);
+    font-family: Midnight;
+    padding: 0rem 0.2rem;
+    border-radius: 0.4rem;
+    rotate: -3deg;
+    font-weight: 700;
+}
+
+#section-7 .top-content h1{
+    font-family: Midnight;
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+#section-7 .top-content p{
+    font-family: Roboto-mono;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+#section-7 .big-card-container{
+    width: 100%;
+    height: 80vh;
+    padding: 2rem 0;
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#section-7 .big-card-container .cards{
+    width: 95%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    border: 1px solid black;
+}   
+
+#section-7 .big-card-container .cards .card-left{
+    border-radius: 1rem 0 0 1rem;
+    
+}
+
+#section-7 .big-card-container .cards .card-right{
+    border-radius: 0 1rem 1rem 0;
+}
+
+#section-7 .big-card-container .cards .card-left{
+    width: 55%;
+}
+
+#section-7 .big-card-container::-webkit-scrollbar{
+    display: none;
+}
+#section-7 .big-card-container .cards .card-left img{
+    height: 35vmax;
+    position: absolute;
+    transform:translateY(-10%);
+}
+
+#section-7 .big-card-container .cards .card-right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#section-7 .big-card-container .cards .card-right h1{
+    font-family: Reckless;
+    font-size: 4.5rem;
+    width: 50%;
+    font-weight: 100;
+}
+
+#section-7 .big-card-container .cards .card-right p{
+    font-family: Figtree;
+    width: 60%;
+    font-size:1.1rem;
+}
+
+#section-7 .big-card-container .cards .card-right>button{
+    padding: 1rem 3.5rem;
+    font-family: Figtree;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    transition: all ease 0.2s;
+}
+
+#section-7 .big-card-container .cards .card-right>button:hover{
+    background-color: #2a2857;
+    color: white;
+}
+
+#section-7 .big-card-container #card1 .card-right,
+#section-7 .big-card-container #card1 .card-left{
+    background-color: #ffcb96;
+}
+
+#section-7 .big-card-container #card2 .card-right,
+#section-7 .big-card-container #card2 .card-left{
+    background-color: #c0e571;
+}
+
+#section-7 .big-card-container #card3 .card-right,
+#section-7 .big-card-container #card3 .card-left{
+    background-color: #ffd265;
+}
+
+#section-8 {
+    min-height:120vh;
+    width: 100%;
+}
+
+.sec-8-top{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 9rem;
+}
+
+.sec-8-top h1{
+    font-family: Reckless;
+    width: 55vmax;
+    font-family: Reckless;
+    font-weight: 100;
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    white-space: none;
+}
+
+#section-8 .best-seller button{
+    background-color: #daaeea;
+    font-size: clamp(2rem, 3.5vw, 6rem);
+    font-family: Midnight;
+    padding: 0rem 0.2rem;
+    border-radius: 0.4rem;
+    rotate: -3deg;
+    font-weight: 700;
+}
+
+#section-8 .recipe-container{
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 0.7rem;
+    gap: 1.2rem;
+    overflow-x: auto;
+    flex-shrink: 0;
+}
+
+#section-8 .recipe-container::-webkit-scrollbar{
+    display: none;
+}
+
+#section-8 .recipe-container .cards{
+    height: 380px;
+    width: clamp(300px, 5vw, 350px);
+    flex-shrink: 0;
+    border-radius: 1rem;
+}
+
+#section-8 .recipe-btn button{
+    font-family: Midnight;
+    font-size: 1.4rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+}
+
+#section-8 .recipe-container .cards .card-up{
+    height: 80%;
+    border-radius: 1rem 1rem 0 0;
+    padding: 1rem;
+    background-color: #2a2857;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+
+}
+
+#section-8 .recipe-container .cards .card-up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+#section-8 .recipe-container .cards .card-down{
+    height: 20%;
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem;
+    background-color: #c0dbff;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#section-8 .recipe-container .cards .card-down p{
+    font-family: Roboto-mono;
+}
+
+#section-8 .recipe-container #card1 .card-up{
+    background-image: url("//www.twoleavestea.com/cdn/shop/articles/enjoy_9b280eb3-acdd-47d2-ba91-0d2f259d3d66.svg?v=1774545568&width=600");
+    background-size: cover;
+    background-position: center;
+}
+
+#section-8 .recipe-container #card2 .card-up{
+    background-image: url("//www.twoleavestea.com/cdn/shop/articles/Two_Leaves_May_25_Shoot-36_16x9_6008ffcb-7380-43d9-b1f6-b1f542f934b0.jpg?v=1773683613&width=600");
+    background-size: cover;
+}
+#section-8 .recipe-container #card3 .card-up{
+    background-image: url("//www.twoleavestea.com/cdn/shop/articles/Two_Leaves_May_25_Shoot-24_SQ.jpg?v=1775656199&width=600");
+    background-size: cover;
+}
+#section-8 .recipe-container #card4 .card-up{
+    background-image: url("//www.twoleavestea.com/cdn/shop/articles/chef_s_matcha_mix_9ae88222-5d88-415f-a90d-4cd0e47af7d8.svg?v=1775654273&width=600");
+    background-size: cover;
+}
+#section-8 .recipe-container #card5 .card-up{
+    background-image: url("//www.twoleavestea.com/cdn/shop/articles/ceremonial-matcha-tea-organic_1cf6ef8d-b56a-483f-8d58-29f7667bd97a.svg?v=1773688403&width=600");
+    background-size: cover;
+}
+#section-8 .recipe-container #card6 .card-up{
+    background-image: url("//www.twoleavestea.com/cdn/shop/articles/easy_to_prepare_cold_d444ce3d-bb29-4de5-83ae-4aef3582392b.svg?v=1775655934&width=600");
+    background-size: cover;
+}
+#section-8 .recipe-container #card7 .card-up{
+    background-image: url("//www.twoleavestea.com/cdn/shop/articles/easy_to_prepare_cold_d2bb63c1-ef3c-4bd5-ac42-ecce65535274.svg?v=1775654474&width=600");
+    background-size: cover;
+}
+
+#section-8 .recipe-container .cards .card-up,
+#section-8 .recipe-container .cards .recipe-btn button{
+    transition: all ease 0.3s;
+}
+
+#section-8 .recipe-container .cards .card-up{
+    transition: scale 0.4s ease;
+}
+
+
+#section-8 .recipe-container .cards:hover .card-up{
+    scale: 1.05;
+}
+
+#section-8 .recipe-container .cards:hover .recipe-btn button{
+    transform: rotate(-5deg);
+}
+
+#section-9{
+    height: 120vh;
+    width: 100%;
+    position: relative;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#section-9 img{
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(-11%);
+}
+
+#section-9 .company{
+    background-color: #f26412;
+    height: 98vh;
+    width: 60vh;
+    position: absolute;
+    transform: translate(7%, -119%);
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#section-9 .company .company-top h1{
+    font-family: Reckless;
+    font-size: 3.5rem;
+    font-weight: 100;
+    width: 60%;
+}
+
+#section-9 .company .company-btm p{
+    font-family: Figtree;
+    font-size: 1.4rem;
+    width: 90%;
+}
+
+#section-9 .company .company-btm button{
+    font-family: Figtree;
+    padding: 1rem 3.5rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    transition: all ease 0.3s;
+}
+
+#section-9 .company .company-btm button:hover{
+    background-color: #2a2857;
+    color: white;
+}
+
+#section-9 .company .company-btm{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+#section-10{
+    height: 152vh;
+    width: 100%;
+    background-color: #c0dbff;
+    padding: 2% 2.5rem 1rem 2.5rem;
+}
+
+#section-10 .sec-10-top{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+}
+
+
+#section-10 .sec-10-top .left{
+    margin-left: 8vw;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+
+
+#section-10 .sec-10-top .left h1{
+    font-family: Midnight;
+    font-weight: 100;
+    font-size: 2.6rem;
+}
+
+#section-10 .sec-10-top .left h2{
+    font-family: Reckless;
+    color: #201c1a;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+#section-10 .sec-10-top .left .inp-box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#section-10 .sec-10-top .left .inp-box input{
+    height: 3.5rem;
+    width: 24rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 0.7rem;
+}
+
+#section-10 .sec-10-top .left .inp-box button{
+    padding: 1rem 3.5rem;
+    color: white;
+    font-size: 1rem;
+    font-family: Figtree;
+    border: 1px solid black;
+    border-radius: 2rem;
+    background-color: #2a2857;
+    transition: all ease 0.2s;
+}
+
+#section-10 .sec-10-top .left .inp-box button:hover{
+    background-color: #ffb500;
+    color: black;
+}
+
+#section-10 .sec-10-top .right{
+    width: 55%;
+    padding: 2rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#section-10 .sec-10-top .right .socials{
+    display: flex;
+    gap: 1rem;
+}
+
+#section-10 .sec-10-top .right .socials i{
+    font-size: 2.2rem;
+    color: #201c1a;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.4rem;
+    transition: all ease 0.2s;
+
+}
+
+#section-10 .sec-10-top .right .socials i:hover{
+    background-color: white;
+}
+
+#section-10 .sec-10-center{
+    height: auto;
+    background-color: #2a2857;
+    margin-top: 5%;
+    border-radius: 0.7rem;
+    padding: 2rem 2rem 4rem 2rem;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 7rem;
+}
+
+#section-10 .sec-10-center .details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+#section-10 .sec-10-center h2{
+    font-family: Reckless;
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#section-10 .sec-10-center h3{
+    font-family: Figtree;
+    font-size: 1.15rem;
+    font-weight: 100;
+    color: #afafaa;
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+}
+
+#section-10 .sec-10-center h3:hover{
+    color: white;
+}
+
+#section-10 .sec-10-center h3::after{
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: -4px;
+
+    width: 0%;
+    height: 1px;
+
+    background-color: white;
+
+    transition: width 0.3s ease;
+}
+
+#section-10 .sec-10-center h3:hover::after{
+    width: 100%;
+}
+
+
+#section-10 .sec-10-center .details i{
+    display: none;
+}
+
+#section-11{
+    padding-bottom: 1rem;
+    width: 100vw;
+    height: 65vh;
+    background-color: #c0dbff;
+    background-image: url("https://www.twoleavestea.com/cdn/shop/files/footer-extended_1.png?v=1771834074");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#section-11 img{
+    height: 6rem;
+}
+
+#section-11 footer{
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #201c1a;
+    text-align: center;
+    font-family: Roboto-mono;
+}
+
+@media (max-width:1025px) {
+
+    .ri-menu-line{
+        display: block;
+    }
+
+    .nav-left span{
+        display: none;
+    }
+
+    .nav-left svg{
+        display: none;
+    }
+
+    .nav-right span{
+        display: none;
+    }
+
+    .nav-left{
+        width: 0%;
+    }
+
+    #section-1{
+        background-image: url(./assets/Mobile-bg.webp);
+    }
+
+    #section-1 .text-container{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section-1 .section-1-text{
+        width: 100%;
+        height: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #section-1 .section-1-text h1{
+        font-size: 3.5rem;
+    }
+    #section-1 .section-1-text button{
+        width: 100%;
+    }
+
+    #section-2 .section-2-text{
+        margin-top: 5vmax;
+    }
+
+    #section-2 .section-2-text h1{
+        width: 60%;
+        line-height: 1.1;
+    }
+
+    .best-seller{
+        justify-content: start;
+    }
+
+    #section-2 .best-seller button{
+        font-size: 2rem;
+    }
+
+    #section-3{
+        padding: 1rem;
+    }
+
+    #section-3 input{
+        width: 90vw;
+        height: 10vh;
+        font-size: 1.6rem;
+    }
+
+    .section-3-content{
+        gap:2rem;
+    }
+
+    .section-3-top h1{
+        font-size: 2rem;
+        width: 80vw;
+    }
+
+    #section-3 .section-3-btm .blues{
+        width: 90vw;
+    }
+
+    #section-4 .section-4-content h1{
+        width: 100%;
+    }
+
+    #section-4 .section-4-content span{
+        font-size: 2rem;
+        width: 45vmax;
+    }
+
+    #section-4 .section-4-content>button{
+        width: 90vw;
+    }
+    
+    .section-5-top{
+    padding: 2rem;
+    } 
+
+    .section-5-top h1{
+        display: none;
+    }
+
+    #section-6{
+        flex-wrap: wrap;
+    }
+
+    #section-6 .sec-6-left{
+        height: 60%;
+        width: 100%;
+    }
+
+    #section-6 .sec-6-left{
+        background-position: center;
+    }
+
+    #section-6 .sec-6-right{
+        height: 40%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section-6 .sec-6-right .sec-6-txt{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #section-6 .sec-6-right .sec-6-txt h1{
+        font-size: 2.3rem;
+    }
+
+    #section-6 .sec-6-right .sec-6-txt p{
+        font-size: 1rem;
+    }
+
+    #section-7 .big-card-container{
+        height: auto;
+    }
+
+    #section-7 .top-content{
+        height: 45vh;
+        align-items: center;
+        justify-content: end;
+    }
+
+    #section-7 .top-content h1{
+        font-size: 2.4rem;
+        width: 70%;
+        text-align: center;
+    }
+    #section-7 .top-content p{
+        font-size: 0.7rem;
+    }
+
+    #section-7 .big-card-container .cards{
+        display: flex;
+        flex-direction: column !important;
+        height: auto;
+        align-items: center;
+    }
+
+    #section-7 .big-card-container .cards .card-left{
+        width: 100%;
+        height: 25vh;
+        border-radius: 1rem 1rem 0 0;
+        position: relative;
+    }
+
+    #section-7 .big-card-container .cards .card-right{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 1rem 1rem;
+        padding: 5rem 2rem 2rem 2rem;
+    }
+
+    #section-7 .big-card-container .cards .card-left img{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: clamp(320px, 45vw, 420px);
+    height: auto;
+    transform: translate(-65%, 10%);
+    object-fit: cover;
+    }
+
+    #section-7 .big-card-container .cards .card-right h1{
+        width: 100%;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #section-7 .big-card-container .cards .card-right p{
+        width: 100%;
+        text-align: center;
+    }
+
+    #section-8 .sec-8-top{
+        padding: 1rem;
+        align-items: start;
+        justify-content: start;
+    }
+
+    #section-8 .sec-8-top h1{
+        width: 80%;
+    }
+
+    #section-9{
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+    }
+
+    #section-9 .company{
+        position: static;
+        transform: none;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2;
+    }
+
+    #section-9 .company .company-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section-9 .company .company-btm{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section-9 .company .company-top h1{
+        width: 90%;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #section-9 .company .company-btm p{
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    #section-9 .company .company-btm button{
+        width: 90%;
+    }
+
+    #section-9 img{
+        width: 100%;
+        height: 80vw;
+        transform: none;
+        display: block;
+    }
+
+    #section-10{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        height: fit-content;
+    }
+
+    #section-10 .sec-10-top{
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #section-10 .sec-10-top .left{
+        width: 90vw;
+        margin-left: 0;
+    }
+
+    #section-10 .sec-10-top .left h1{
+        font-size: 2rem;
+    }
+
+    #section-10 .sec-10-top .left h2{
+        font-size: 1.6rem;
+    }
+
+    #section-10 .sec-10-top .left .inp-box{
+        flex-direction: column;
+    }
+    #section-10 .sec-10-top .left .inp-box input{
+        width: 100%;
+    }
+
+    #section-10 .sec-10-top .left .inp-box button{
+        width: 90vw;
+    }
+
+    #section-10 .sec-10-top .right{
+        padding: 1rem 0;
+        justify-content: start;
+    }
+
+    #section-10 .sec-10-center{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    #section-10 .sec-10-center .details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+
+    #section-10 .sec-10-center .details h2{
+        font-size: 1.7rem;
+    }
+
+    #section-10 .sec-10-center h3{
+        display: none;
+    }
+
+    #section-10 .sec-10-center .details i{
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    #section-10 .sec-10-center .details i:hover{
+        display: block;
+        background-color: #ffb500;
+    }
+
+    #section-11{
+        padding-top: 1rem;
+    }
+
+}
+
+
+
+@media (max-width:360px) {
+    .nav-left{
+        margin-right: 10%;
+    }
+
+    #section-1 .section-1-text h1{
+        font-size: 2.7rem;
+    }
+    #section-1 .section-1-text p{
+        font-size: 0.9rem;
+    }
+
+    #section-2 .section-2-text h1{
+        font-size: 1.6rem;
+        width: 90%;
+        line-height: 1.1;
+    }
+
+    #section-2 .section-2-text{
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+
+    #section-4 .section-4-content>button{
+        width: 90vw;
+    }
+
+    #section-3 .section-3-btm .blues span{
+        font-size: 1.5rem;
+    }
+
+    .new-cards{
+        width: 100vw;
+    }
+
+    .new-cards .card-bottom p{
+        font-size: 0.6rem;
+    }
+
+    #section-6 .sec-6-right{
+        height: auto;
+    }
+
+    #section-6 .sec-6-right .sec-6-txt button{
+        width: 90vw;
+    }
+    #section-8 .sec-8-top h1{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    #section-9 .company .company-top h1{
+        font-size: 2.8rem;
+        width: 55%;
+    }
+
+    #section-9 .company .company-btm p{
+        font-size: 1.2rem;
+        width: 60%;
+    }
+
+    #section-9 .company{
+        width: 100%;
+        padding: 1rem 0;
+        height: 80vh;
+        justify-content: space-evenly;
+    }
+
+    #section-9 img{
+        height: 50vh;
+    }
+
+    #section-9 .company .company-btm {
+        width: 100%;
+    }
+
+    #section-9 .company .company-btm button{
+        width: 85%;
+    }
+
+    #section-10 .sec-10-center{
+        margin-top: 5rem;
+    }
+
+    #section-11 footer{
+        font-size: 0.8rem;
+    }
+}
